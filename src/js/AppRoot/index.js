@@ -17,8 +17,6 @@ export default class AppRoot extends Component {
 
   render() {
     // const { routes, store } = this.props;
-    console.log('Routes', routes);
-
     return (
       // <Provider store={store}>
         <Switch>
