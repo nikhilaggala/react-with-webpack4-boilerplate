@@ -1,3 +1,5 @@
+const path = require('path');
+
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
@@ -18,6 +20,22 @@ module.exports = {
             loader: "html-loader"
           }
         ]
+      },
+      {
+        test: /\.css$/,
+        use: [
+          { loader: 'style-loader' },
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1,
+              modules: {
+                localIdentName: '[path][name]__[local]--[hash:base64:5]',
+                context: path.resolve(__dirname, 'src', 'js'),
+              },
+            },
+          },
+        ],
       },
     ]
   },

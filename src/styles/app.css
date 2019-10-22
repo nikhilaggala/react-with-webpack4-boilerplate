@@ -1,0 +1,11 @@
+:root {
+  background-color: black;
+  color: white
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
