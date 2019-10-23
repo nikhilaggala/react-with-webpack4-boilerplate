@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import myImage from '../../../static/images/me.png'
 import classes from './index.css';
 
 export default class HomePage extends Component {
@@ -32,13 +33,21 @@ export default class HomePage extends Component {
   renderContent = () => {
     const { theme } = this.state;
 
-    const text = theme === 'light'
-      ? `Nikhil Aggala's Page,`
-      : 'Be careful!';
+    const text = `Nikhil Aggala's Page.`
 
     return (
       <div className={classes.content}>
-        {text}
+        <div className={classes.imageContainer}>
+          <img
+          src={myImage}
+          alt="my-image"
+          title="Nikhil Aggala"
+          className={classes.myImage}
+          />
+        </div>
+        <div className={classes.description}>
+          {text}
+        </div>
       </div>
     );
   }

@@ -37,6 +37,10 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(svg|png|jpg|jpeg)$/,
+        use: ['url-loader']
+      },
     ]
   },
   plugins: [
