@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { HashRouter as Router } from 'react-router-dom';
 
 import AppRoot from './AppRoot';
+import PageBar from './PageBar';
 
 import classes from '../styles/app.css'
 
@@ -12,11 +13,12 @@ import classes from '../styles/app.css'
 
 const render = (Component) => {
   ReactDOM.render(
-    <div className={classes.app}>
-      <Router>
+    <Router>
+      <div className={classes.appContainer}>
+        <PageBar />
         <Component />
-      </Router>
-    </div>,
+      </div>
+    </Router>,
     document.getElementById('app-root')
   );
 };

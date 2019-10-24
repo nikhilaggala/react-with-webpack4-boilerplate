@@ -5,6 +5,7 @@ import { Route, Switch } from 'react-router-dom';
 // import { createBrowserHistory } from 'history';
 
 import { routes } from '../routes';
+import classes from './index.css'
 
 // const history = createBrowserHistory();
 
@@ -19,13 +20,15 @@ export default class AppRoot extends Component {
     // const { routes, store } = this.props;
     return (
       // <Provider store={store}>
-        <Switch>
-          {
-            routes.map((route, i) => (
-              <RouteWithSubRoutes key={i} {...route} />
-            ))
-          }
-        </Switch>
+        <div className={classes.app}>
+          <Switch>
+            {
+              routes.map((route, i) => (
+                <RouteWithSubRoutes key={i} {...route} />
+              ))
+            }
+          </Switch>
+        </div>
       // </Provider>
     );
   }

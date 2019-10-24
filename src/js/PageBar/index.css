@@ -1,0 +1,20 @@
+.container {
+  border: var(--border-color);
+  height: var(--pagebar-height);
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--pagebar-border-color);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  padding: 0.4rem;
+  border-radius: 10px;
+  position: absolute;
+  right: 2rem;
+}

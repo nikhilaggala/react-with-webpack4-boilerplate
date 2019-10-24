@@ -1,33 +1,23 @@
 .pageContainer {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
-  padding: 0 var(--responsive-padding);
+  /* height: 100%; */
 }
 
-.button {
-  border: 1px solid var(--border-color);
-  cursor: pointer;
-  padding: 0.4rem;
-  border-radius: 30px;
-}
+
 
 .content {
-  border: 1px solid var(--border-color);
+  margin-top: var(--responsive-margin);
   width: 100%;
   display: flex;
-  flex: 1;
   align-items: center;
-  font-size: var(--font-text-size);
-  padding: var(--responsive-padding);
+  font-size: var(--text-font-size);
 }
 
 .imageContainer {
   height: 30rem;
   width: 24rem;
-  border: 1px solid red;
+  border: 1px solid var(--image-border-color);
   padding: 2rem;
 }
 
@@ -44,7 +34,7 @@
   .imageContainer {
     height: 15rem;
     width: 10rem;
-    border: 1px solid red;
+    border: 1px solid var(--image-border-color);
     padding: 0.8rem;
   }
 }

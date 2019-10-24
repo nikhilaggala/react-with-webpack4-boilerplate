@@ -11,10 +11,20 @@ html, body, #root {
   --font-color: #424242;
   --bg-color: #fff;
   --border-color: #424242;
-  --font-text-size: 16px;
+  --text-font-size: 16px;
+
+  --pagebar-height: 50px;
+
+  /* PADDINGS */
   --responsive-padding: 2rem;
 
-  /* --heading-color: #292922; */
+  /* MARGINS */
+  --responsive-margin: 2rem;
+
+  /* BORDERS */
+  --image-border-color: #008dff;
+  --pagebar-border-color: red;
+
 }
 
 [data-theme="dark"] {
@@ -23,28 +33,41 @@ html, body, #root {
   --font-color: #e1e1ff;
   --bg-color: #000000;
   --border-color: #e1e1ff;
-  --font-text-size: 16px;
+  --text-font-size: 16px;
+
+  --pagebar-height: 50px;
+
+  /* PADDINGS */
   --responsive-padding: 2rem;
 
+  /* MARGINS */
+  --responsive-margin: 2rem;
 
-  /* --heading-color: #818cab; */
+  /* BORDERS */
+  --image-border-color: red;
+  --pagebar-border-color: #008dff;
+
 }
 
 @media (max-width: 576px) {
   :root {
-  --font-text-size: 12px;
+  --text-font-size: 12px;
   --responsive-padding: 0.8rem;
+  --responsive-margin: 0.8rem;
   }
 }
 
 body {
   background-color: var(--bg-color);
   color: var(--font-color);
+  overflow-x: hidden;
 }
 
-.app {
+.appContainer {
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
   max-width: 100vw;
+  max-width: 100%;
 }
 

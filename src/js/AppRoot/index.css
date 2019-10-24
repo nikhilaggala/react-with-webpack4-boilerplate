@@ -1,0 +1,7 @@
+.app {
+  height: 100vh;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 50px var(--responsive-padding) 0;
+}

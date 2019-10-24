@@ -9,7 +9,7 @@ export const routes = [
     component: HomePage
   },
   {
-    path: "/home",
+    path: "/about",
     component: HomePage,
   }
   // example for sub routes
