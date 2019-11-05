@@ -2,8 +2,18 @@ const path = require('path');
 
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 
+// Aliases for app kept in separate module
+const alias = require('./alias');
+
 module.exports = {
   entry: './src/js/index',
+
+  resolve: {
+    alias: alias,
+    modules: [path.resolve(__dirname, "src"), "node_modules"],
+    extensions: ['.js']
+  },
+
   module: {
     rules: [
       {
@@ -43,6 +53,7 @@ module.exports = {
       },
     ]
   },
+
   plugins: [
     new HtmlWebPackPlugin({
       template: "./index.html",

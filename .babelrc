@@ -3,6 +3,12 @@
   "plugins": [
     "@babel/plugin-proposal-class-properties",
     "react-css-modules"
-  ]
-
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        [ "babel-plugin-webpack-alias", { "config": "./webpack.config.js" } ]
+      ]
+    }
+  }
 }

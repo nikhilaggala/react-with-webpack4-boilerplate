@@ -1,5 +1,5 @@
 // Component imports
-import HomePage from '../containers/HomePage'
+import HomePage from 'containers/HomePage'
 
 // Define all routes here
 export const routes = [

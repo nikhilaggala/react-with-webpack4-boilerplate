@@ -3,7 +3,25 @@ html, body, #root {
   padding: 0 auto;
 }
 
+/*
+  Inherits " box-sizing: border-box; "
+  through out app
+*/
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+img { box-sizing: content-box; }
+
 /* --text-font-size: 16px; */
+
+/* red - ff5252 */
+/* Black 222 \
+border - dadce0, fff
+black font - RGBA(0, 0 ,0, 0.6) placeholder, deselcted subtitles
+RGBA(0, 0 ,0, 0.87) - main textcolor
+
+
+RGBA(255, 255 ,255, 0.7) - contrast color to place holder
+*/
 
 :root {
   /* --primary-color: #302AE6; */
@@ -23,15 +41,14 @@ html, body, #root {
 
   /* BORDERS */
   --image-border-color: #008dff;
-  --pagebar-border-color: red;
-
+  --pagebar-border-color: rgba(0,0,0,.14);
 }
 
 [data-theme="dark"] {
   /* --primary-color: #9A97F3; */
   /* --secondary-color: #818cab; */
   --font-color: #e1e1ff;
-  --bg-color: #000000;
+  --bg-color: #222;
   --border-color: #e1e1ff;
   --text-font-size: 16px;
 
@@ -45,7 +62,7 @@ html, body, #root {
 
   /* BORDERS */
   --image-border-color: red;
-  --pagebar-border-color: #008dff;
+  --pagebar-border-color: #fff;
 
 }
 
